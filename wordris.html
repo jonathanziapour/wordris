@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/words.js"></script>
+		<script src="js/gameLogic.js"></script>
+		<link rel="stylesheet" href="css/jumbotron-narrow.css"></link>
+		<link rel="stylesheet" href="css/animate.css"></link>
+		<link rel="stylesheet" href="css/style.css"></link>
+		<title>Wordris</title>
+	</head>
+</head>
+<body onkeyDown="keyDown(event);">
+
+    <div class="container">
+      <div class="header clearfix">
+        <h3 class="text-muted">Wordris</h3>
+        <p class="text-muted">
+        	Build lines by moving the letter tiles using the arrow keys. Score points by building words into your lines. Match words to level up and unlock longer words for even more points!
+        </p>
+      </div>
+	
+	<div id="gameContainer" class="container">
+		<div id="canvasContainer" class="canvasContainer">
+			<canvas id="bgCanvas" width="300" height="400"></canvas>
+			<canvas id="gCanvas" width="300" height="400"></canvas>
+			<canvas id="foregroundCanvas" width="300" height="400"></canvas>
+		</div>
+
+		<div id="gInfo" class="gameInfo row">
+			<div class="col-md-3">
+				<div id="scorePanel" class="panel panel-default">
+					<div class="panel-heading"><h6 class="text-center">SCORE</h6></div>
+					<div class="panel-body" id="scorePanelText"></div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div id="levelPanel" class="panel panel-default">
+					<div class="panel-heading"><h6 class="text-center">LEVEL</h6></div>
+					<div class="panel-body" id="levelPanelText"></div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div id="wordCountPanel" class="panel panel-default">
+					<div class="panel-heading"><h6 class="text-center">WORDS</h6></div>
+					<div class="panel-body" id="wordCountPanelText"></div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div id="bestScorePanel" class="panel panel-default">
+					<div class="panel-heading"><h6 class="text-center">HI-SCORE</h6></div>
+					<div class="panel-body" id="bestScorePanelText"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="gameInfo row">	
+			<div id="activeWords">
+				<h6>Active Words:</h6>
+				<div id="g3Words" class="well well-sm hidden"></div>
+				<div id="g4Words" class="well well-sm hidden"></div>
+				<div id="g5Words" class="well well-sm hidden"></div>
+				<div id="g6Words" class="well well-sm hidden"></div>
+				<div id="g7Words" class="well well-sm hidden"></div>
+			</div>
+		</div>
+	</div>
+
+      <footer class="footer">
+      </footer>
+</body>
+</html>

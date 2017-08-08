@@ -1,0 +1,102 @@
+body {
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background-color: #838487;
+}
+
+.panel {
+}
+
+.panel-heading {
+	padding: 5px 10px;
+}
+
+.panel-heading > h6 {
+	margin: 4px 0px 0px 0px;
+	font-size: 9px;
+}
+
+.panel-body {
+	padding: 5px 10px;
+}
+
+.col-md-3 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#canvasContainer {
+	position: relative;
+}
+
+#gameContainer {
+	min-height: 400px;
+	margin-bottom: 30px;
+}
+
+canvas {
+	position: absolute;
+	border: 1px solid black;
+	margin: 0px;
+	padding: 0px;
+}
+	
+#bgCanvas {
+	z-index: 1;
+	background-color: rgba(207, 176, 149, 0.5);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#gCanvas {
+	z-index: 2;
+}
+
+#foregroundCanvas {
+	z-index: 3;
+}
+
+#particles-js {
+	position:fixed;
+	z-index: -1;
+	background-color: tan;
+}
+
+.gameInfo {
+	padding-left:350px;
+	width:100%;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+p#gScore {
+	margin: 0;
+	padding: 0;
+}
+
+.well#g3Words {
+	background: #95DEE3;
+	color: black;
+}
+
+.well#g4Words {
+	background-color: #578CA9;
+	color: white;
+}
+
+.well#g5Words {
+	background-color: #004B8D;
+	color: white;
+}
+
+.well#g6Words {
+	background-color: #F6D155;
+	color: black;
+}
+
+.well#g7Words {
+	background-color: #F2552C;
+	color: white;
+}
